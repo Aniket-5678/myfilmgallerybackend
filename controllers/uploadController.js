@@ -1,5 +1,4 @@
 
-import dotenv from "dotenv"
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -8,8 +7,6 @@ import Image from '../models/Image.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
-dotenv.config()
 
 export const uploadImage = async (req, res) => {
   if (!req.file) {
